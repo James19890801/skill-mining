@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skill Mining · Powered by Qoder</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+  body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+  .card-hover:hover { transform: translateY(-2px); transition: transform 0.2s; }
+  .score-animate { animation: growWidth 1s ease-out forwards; }
+  @keyframes growWidth { from { width: 0; } }
+</style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+  <!-- Hero Header -->
+  <div class="gradient-bg text-white py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex items-center gap-2 text-white/60 text-sm mb-5">
+        <span>🔍</span>
+        <span>Skill Mining Report</span>
+        <span>·</span>
+        <span>Powered by Qoder</span>
+      </div>
+      <h1 class="text-4xl font-bold mb-3">示例采购审批流程</h1>
+      <p class="text-white/80 text-lg mb-2">Sample Procurement Approval Process</p>
+      <p class="text-white/60 text-sm">AI 已完成全节点扫描，识别出以下 Skill 建设机会</p>
+
+      <!-- Stats Bar -->
+      <div class="grid grid-cols-3 gap-4 mt-10">
+        <div class="bg-white/15 backdrop-blur rounded-2xl p-5 text-center border border-white/10">
+          <div class="text-4xl font-bold">8</div>
+          <div class="text-white/70 text-sm mt-2">Total Nodes</div>
+        </div>
+        <div class="bg-white/15 backdrop-blur rounded-2xl p-5 text-center border border-white/10">
+          <div class="text-4xl font-bold text-emerald-300">3</div>
+          <div class="text-white/70 text-sm mt-2">High Priority Skills</div>
+        </div>
+        <div class="bg-white/15 backdrop-blur rounded-2xl p-5 text-center border border-white/10">
+          <div class="text-4xl font-bold text-amber-300">1</div>
+          <div class="text-white/70 text-sm mt-2">Medium Priority Skills</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-4xl mx-auto px-6 py-12">
+
+    <!-- Top 3 Podium -->
+    <div class="mb-12">
+      <h2 class="text-xl font-bold text-gray-900 mb-1">🏆 Top Skill Opportunities</h2>
+      <p class="text-sm text-gray-400 mb-5">Ranked by AI feasibility score</p>
+      <div class="space-y-3">
+        <div class="card-hover flex items-center gap-4 p-4 bg-white rounded-2xl border border-gray-100 shadow-sm">
+          <span class="text-3xl">🥇</span>
+          <div class="flex-1">
+            <p class="font-semibold text-gray-900">价格比对分析</p>
+            <p class="text-xs text-gray-500 mt-0.5">Price Comparison Analysis · 输入多份报价单，自动生成对比矩阵</p>
+          </div>
+          <div class="text-right">
+            <span class="text-2xl font-bold text-indigo-600">92</span>
+            <p class="text-xs text-gray-400">/ 100</p>
+          </div>
+        </div>
+        <div class="card-hover flex items-center gap-4 p-4 bg-white rounded-2xl border border-gray-100 shadow-sm">
+          <span class="text-3xl">🥈</span>
+          <div class="flex-1">
+            <p class="font-semibold text-gray-900">需求收集与汇总</p>
+            <p class="text-xs text-gray-500 mt-0.5">Demand Aggregation · 自动聚合多部门需求，结构化输出采购清单</p>
+          </div>
+          <div class="text-right">
+            <span class="text-2xl font-bold text-indigo-600">88</span>
+            <p class="text-xs text-gray-400">/ 100</p>
+          </div>
+        </div>
+        <div class="card-hover flex items-center gap-4 p-4 bg-white rounded-2xl border border-gray-100 shadow-sm">
+          <span class="text-3xl">🥉</span>
+          <div class="flex-1">
+            <p class="font-semibold text-gray-900">供应商资质审核</p>
+            <p class="text-xs text-gray-500 mt-0.5">Vendor Qualification Review · AI 自动提取资质，对照标准输出意见</p>
+          </div>
+          <div class="text-right">
+            <span class="text-2xl font-bold text-indigo-600">75</span>
+            <p class="text-xs text-gray-400">/ 100</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-100 my-8"></div>
+
+    <!-- All Nodes -->
+    <div>
+      <h2 class="text-xl font-bold text-gray-900 mb-1">📋 Full Node Analysis</h2>
+      <p class="text-sm text-gray-400 mb-6">每个流程节点的 Skill 适合度评估（满分 100 分）</p>
+      <div class="grid gap-5">
+
+        <!-- Node 1 -->
+        <div class="card-hover bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center gap-3">
+              <span class="w-9 h-9 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold">1</span>
+              <div>
+                <h3 class="font-semibold text-gray-900">需求收集与汇总</h3>
+                <p class="text-xs text-gray-400 mt-0.5">各部门提交采购需求，汇总到表格</p>
+              </div>
+            </div>
+            <span class="px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-100">✅ 立即可做</span>
+          </div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="flex-1 bg-gray-100 rounded-full h-2.5">
+              <div class="h-2.5 rounded-full" style="width:88%;background:#10b981"></div>
+            </div>
+            <span class="text-sm font-bold text-emerald-600 w-8">88</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="bg-indigo-50 text-indigo-600 text-xs px-2.5 py-1 rounded-full">重复度极高</span>
+            <span class="bg-indigo-50 text-indigo-600 text-xs px-2.5 py-1 rounded-full">有明确输入输出</span>
+            <span class="bg-indigo-50 text-indigo-600 text-xs px-2.5 py-1 rounded-full">AI可自动汇总分类</span>
+          </div>
+          <div class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-4">
+            <p class="text-xs text-indigo-400 font-medium mb-1.5">💡 Skill 构想</p>
+            <p class="text-sm text-indigo-800">需求汇总 Skill：自动聚合多部门需求邮件，结构化输出采购清单</p>
+          </div>
+          <p class="text-xs text-gray-400 mt-3">实现难度：低 · Difficulty: Low</p>
+        </div>
+
+        <!-- Node 2 -->
+        <div class="card-hover bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center gap-3">
+              <span class="w-9 h-9 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold">2</span>
+              <div>
+                <h3 class="font-semibold text-gray-900">供应商资质审核</h3>
+                <p class="text-xs text-gray-400 mt-0.5">人工核查供应商资质文件</p>
+              </div>
+            </div>
+            <span class="px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-100">✅ 立即可做</span>
+          </div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="flex-1 bg-gray-100 rounded-full h-2.5">
+              <div class="h-2.5 rounded-full" style="width:75%;background:#f59e0b"></div>
+            </div>
+            <span class="text-sm font-bold text-amber-500 w-8">75</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="bg-indigo-50 text-indigo-600 text-xs px-2.5 py-1 rounded-full">耗时长</span>
+            <span class="bg-indigo-50 text-indigo-600 text-xs px-2.5 py-1 rounded-full">规则明确</span>
+            <span class="bg-indigo-50 text-indigo-600 text-xs px-2.5 py-1 rounded-full">AI可辅助比对关键指标</span>
+          </div>
+          <div class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-4">
+            <p class="text-xs text-indigo-400 font-medium mb-1.5">💡 Skill 构想</p>
+            <p class="text-sm text-indigo-800">资质审核 Skill：上传供应商文件，AI 自动提取关键资质并对照标准输出审核意见</p>
+          </div>
+          <p class="text-xs text-gray-400 mt-3">实现难度：中 · Difficulty: Medium</p>
+        </div>
+
+        <!-- Node 3 -->
+        <div class="card-hover bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center gap-3">
+              <span class="w-9 h-9 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold">3</span>
+              <div>
+                <h3 class="font-semibold text-gray-900">价格比对分析</h3>
+                <p class="text-xs text-gray-400 mt-0.5">对比多家供应商报价，形成比价表</p>
+              </div>
+            </div>
+            <span class="px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-50 text-emerald-700 border border-emerald-100">✅ 立即可做</span>
+          </div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="flex-1 bg-gray-100 rounded-full h-2.5">
+              <div class="h-2.5 rounded-full" style="width:92%;background:#10b981"></div>
+            </div>
+            <span class="text-sm font-bold text-emerald-600 w-8">92</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="bg-indigo-50 text-indigo-600 text-xs px-2.5 py-1 rounded-full">高重复</span>
+            <span class="bg-indigo-50 text-indigo-600 text-xs px-2.5 py-1 rounded-full">数据驱动</span>
+            <span class="bg-indigo-50 text-indigo-600 text-xs px-2.5 py-1 rounded-full">AI擅长结构化对比</span>
+          </div>
+          <div class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-4">
+            <p class="text-xs text-indigo-400 font-medium mb-1.5">💡 Skill 构想</p>
+            <p class="text-sm text-indigo-800">比价分析 Skill：输入多份报价单，自动生成对比矩阵并推荐最优选择</p>
+          </div>
+          <p class="text-xs text-gray-400 mt-3">实现难度：低 · Difficulty: Low</p>
+        </div>
+
+        <!-- Node 4 -->
+        <div class="card-hover bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center gap-3">
+              <span class="w-9 h-9 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold">4</span>
+              <div>
+                <h3 class="font-semibold text-gray-900">合同起草</h3>
+                <p class="text-xs text-gray-400 mt-0.5">基于模板起草采购合同</p>
+              </div>
+            </div>
+            <span class="px-2.5 py-1 rounded-full text-xs font-medium bg-amber-50 text-amber-700 border border-amber-100">⚡ 需更多信息</span>
+          </div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="flex-1 bg-gray-100 rounded-full h-2.5">
+              <div class="h-2.5 rounded-full" style="width:70%;background:#f59e0b"></div>
+            </div>
+            <span class="text-sm font-bold text-amber-500 w-8">70</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="bg-indigo-50 text-indigo-600 text-xs px-2.5 py-1 rounded-full">有模板可依</span>
+            <span class="bg-indigo-50 text-indigo-600 text-xs px-2.5 py-1 rounded-full">需要定制化</span>
+            <span class="bg-indigo-50 text-indigo-600 text-xs px-2.5 py-1 rounded-full">AI可生成初稿</span>
+          </div>
+          <div class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-4">
+            <p class="text-xs text-indigo-400 font-medium mb-1.5">💡 Skill 构想</p>
+            <p class="text-sm text-indigo-800">合同起草 Skill：输入关键条款信息，自动生成标准合同初稿</p>
+          </div>
+          <p class="text-xs text-gray-400 mt-3">实现难度：中 · Difficulty: Medium</p>
+        </div>
+
+        <!-- Node 5 -->
+        <div class="card-hover bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+          <div class="flex justify-between items-start mb-4">
+            <div class="flex items-center gap-3">
+              <span class="w-9 h-9 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold">5</span>
+              <div>
+                <h3 class="font-semibold text-gray-900">多级审批流转</h3>
+                <p class="text-xs text-gray-400 mt-0.5">逐级提交审批，等待各级签字</p>
+              </div>
+            </div>
+            <span class="px-2.5 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-100">🔧 需系统集成</span>
+          </div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="flex-1 bg-gray-100 rounded-full h-2.5">
+              <div class="h-2.5 rounded-full" style="width:30%;background:#ef4444"></div>
+            </div>
+            <span class="text-sm font-bold text-red-500 w-8">30</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5 mb-4">
+            <span class="bg-indigo-50 text-indigo-600 text-xs px-2.5 py-1 rounded-full">依赖人工决策</span>
+            <span class="bg-indigo-50 text-indigo-600 text-xs px-2.5 py-1 rounded-full">线下签字环节无法替代</span>
+          </div>
+          <div class="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-4">
+            <p class="text-xs text-indigo-400 font-medium mb-1.5">💡 Skill 构想</p>
+            <p class="text-sm text-indigo-800">审批提醒 Skill：自动推送审批通知，催办超期节点</p>
+          </div>
+          <p class="text-xs text-gray-400 mt-3">实现难度：高 · Difficulty: High</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Scoring Legend -->
+    <div class="mt-10 bg-white rounded-2xl p-6 border border-gray-100">
+      <h3 class="font-semibold text-gray-700 mb-4">📌 Scoring Reference</h3>
+      <div class="grid grid-cols-2 gap-3 text-sm text-gray-600">
+        <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-emerald-400 inline-block"></span><span><strong>80–100</strong>：Build now</span></div>
+        <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-amber-400 inline-block"></span><span><strong>60–79</strong>：Needs more input</span></div>
+        <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-orange-400 inline-block"></span><span><strong>40–59</strong>：Pair with other methods</span></div>
+        <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-red-400 inline-block"></span><span><strong>&lt;40</strong>：Not ready yet</span></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-10 text-center">
+      <p class="text-gray-300 text-xs mb-2">Generated by Qoder Skill Mining Agent</p>
+      <a href="https://github.com/James19890801/skill-mining" class="inline-flex items-center gap-1.5 text-indigo-400 text-xs hover:text-indigo-600 transition-colors">
+        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        James19890801/skill-mining
+      </a>
+    </div>
+
+  </div>
+</body>
+</html>
