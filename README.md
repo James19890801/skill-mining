@@ -1,6 +1,6 @@
 # 🔍 skill-mining
 
-> **A Qoder Skill that automatically mines AI-buildable opportunities from process documents.**
+> **A Skill that automatically mines AI-buildable opportunities from process documents.**
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-667eea?style=flat-square&logo=github)](https://james19890801.github.io/skill-mining/)
 [![Skill Type](https://img.shields.io/badge/Type-Qoder%20Skill-764ba2?style=flat-square)](https://github.com/James19890801/skill-mining)
