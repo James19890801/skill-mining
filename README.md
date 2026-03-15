@@ -22,7 +22,7 @@ Most organizations have process documents — flowcharts, SOPs, approval workflo
 
 ---
 
-## Live Demo
+## Live Demo:https://f7584417.skill-mining-report.pages.dev
 
 👉 **[View Sample Report →](https://james19890801.github.io/skill-mining/)**
 
